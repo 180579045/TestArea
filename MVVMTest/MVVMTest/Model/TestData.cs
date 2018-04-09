@@ -6,7 +6,7 @@ using MyMVVM;
 
 namespace MVVMTest.Model
 {
-    class TestData:NotifyObject
+    class TestData : NotifyObject
     {
         private DateTime _addDateTime;
 

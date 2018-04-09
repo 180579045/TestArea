@@ -8,8 +8,9 @@ using System.Text;
 
 namespace DataBinding.ViewModel
 {
-    class MainWindowViewModel:NotifyObject
+    class MainWindowViewModel : NotifyObject
     {
+        // ______________________________________这个是属性一___________
         private double _doubleValue;
         /// <summary>
         /// Double类型的测试数据
@@ -27,6 +28,7 @@ namespace DataBinding.ViewModel
             }
         }
 
+        // ______________________________________这个是属性二___________
         private TestData _selectedData;
         /// <summary>
         /// 列表中选中行的对象

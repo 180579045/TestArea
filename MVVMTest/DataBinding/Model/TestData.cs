@@ -7,6 +7,9 @@ using System.Windows.Media;
 
 namespace DataBinding.Model
 {
+    /// <summary>
+    /// TestData包含了
+    /// </summary>
     class TestData : NotifyObject
     {
         private DateTime _addDateTime;
@@ -19,6 +22,7 @@ namespace DataBinding.Model
                 if (_addDateTime != value)
                 {
                     _addDateTime = value;
+                    // 属性中这个函数就相当于绑定了View层所有绑定了这个属性的显示控件;
                     RaisePropertyChanged("AddDateTime");
                 }
             }

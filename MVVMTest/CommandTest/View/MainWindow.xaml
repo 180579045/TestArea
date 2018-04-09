@@ -6,17 +6,19 @@
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="186.994" Width="319.206">
     <StackPanel Orientation="Vertical">
-        <Button Content="普通按钮测试"  DockPanel.Dock="Top" Margin="5"
-                Command="{Binding NormalCommand}"/>
+        
+        <Button Content="普通按钮测试"  DockPanel.Dock="Top" Margin="5" Command="{Binding NormalCommand}"/>
+        
         <CheckBox IsChecked="{Binding CanExecute}" Content="允许点击按钮" Margin="5,5,5,0"/>
-        <Button Content="可以禁止点击的按钮" Margin="5"
-                Command="{Binding CanExecuteCommand}" />
+        
+        <Button Content="可以禁止点击的按钮" Margin="5" Command="{Binding CanExecuteCommand}" />
+        
         <DockPanel Margin="5,5,5,0">
             <TextBlock Text="输入参数：" VerticalAlignment="Center"/>
             <TextBox Name="ParamTextBox" DockPanel.Dock="Top" Margin="5"/>
         </DockPanel>
-        <Button Content="带参数的按钮" 
-                Command="{Binding ParamCommand}" 
+        
+        <Button Content="带参数的按钮" Command="{Binding ParamCommand}" 
                 CommandParameter="{Binding ElementName=ParamTextBox, Path=Text}" 
                 Margin="5,0,5,5"/>
     </StackPanel>
