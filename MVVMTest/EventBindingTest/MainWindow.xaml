@@ -7,6 +7,7 @@
         xmlns:cmd="clr-namespace:MyMVVM;assembly=MyMVVM"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="350" Width="525">
+    
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
@@ -19,6 +20,7 @@
     <DockPanel>
         <CheckBox Content="接收鼠标移动消息" DockPanel.Dock="Top" Margin="5"
                       VerticalAlignment="Center" IsChecked="{Binding IsReceiveMouseMove}"/>
+        
         <Label Grid.Row="0" Content="{Binding TipText}" Margin="5"/>
     </DockPanel>
 </Window>

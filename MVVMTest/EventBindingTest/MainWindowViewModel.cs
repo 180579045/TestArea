@@ -10,7 +10,9 @@ namespace EventBindingTest
 {
     class MainWindowViewModel : NotifyObject
     {
-
+        /// <summary>
+        /// 绑定前端Checkbox
+        /// </summary>
         private bool _IsReceiveMouseMove = true;
         public bool IsReceiveMouseMove
         {
@@ -22,6 +24,9 @@ namespace EventBindingTest
             }
         }
 
+        /// <summary>
+        /// 绑定前端显示结果的Label
+        /// </summary>
         private string _tipText;
         public string TipText
         {
